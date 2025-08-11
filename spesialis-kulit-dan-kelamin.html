@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penanganan Infeksi Menular Seksual - Zero Judgment Zone | Klinik Pandawa</title>
+    <meta name="description" content="Penanganan infeksi menular seksual dengan kerahasiaan berlapis di Klinik Pandawa. Zero judgment zone, dokter spesialis berpengalaman, konsultasi gratis.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #2E5BBA;
+            --secondary-teal: #4ECDC4;
+            --accent-orange: #FF9500;
+            --accent-purple: #8B5CF6;
+            --accent-pink: #EC4899;
+            --dark-blue: #1E3A8A;
+            --light-gray: #F8FAFC;
+            --text-dark: #1F2937;
+            --text-light: #6B7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        /* Header Styles */
+        .navbar {
+            background: var(--primary-blue);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-teal) !important;
+        }
+
+        /* Mega Menu Styles */
+        .mega-menu {
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            padding: 2rem 0;
+            margin-top: 0;
+            background: white;
+        }
+
+        .mega-menu-title {
+            color: var(--primary-blue);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-teal);
+        }
+
+        .mega-menu-subtitle {
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mega-menu-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .mega-menu .dropdown-item {
+            padding: 0.4rem 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border: none;
+            background: none;
+            transition: all 0.3s ease;
+        }
+
+        .mega-menu .dropdown-item:hover {
+            color: var(--primary-blue);
+            background: none;
+            padding-left: 0.5rem;
+            transform: translateX(5px);
+        }
+
+        .mega-menu-cta .card {
+            transition: all 0.3s ease;
+        }
+
+        .mega-menu-cta .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Dropdown positioning */
+        .dropdown-menu.mega-menu {
+            left: 0 !important;
+            right: 0 !important;
+            transform: none !important;
+        }
+
+        /* Mobile mega menu adjustments */
+        @media (max-width: 991px) {
+            .mega-menu {
+                position: static !important;
+                width: 100% !important;
+                box-shadow: none;
+                padding: 1rem;
+                background: var(--light-gray);
+            }
+            
+            .mega-menu .container {
+                padding: 0;
+            }
+            
+            .mega-menu-title {
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+            
+            .mega-menu-title:first-child {
+                margin-top: 0;
+            }
+        }
+
+        /* Regular Dropdown Menu Styles */
+        .dropdown-menu {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            padding: 0.5rem 0;
+            margin-top: 0.5rem;
+        }
+
+        .dropdown-item {
+            padding: 0.75rem 1.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .dropdown-item:hover {
+            background: var(--secondary-teal);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .dropdown-item i {
+            color: var(--primary-blue);
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover i {
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(255,255,255,0.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .btn-primary-custom {
+            background: var(--secondary-teal);
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary-custom:hover {
+            background: #3DBDB4;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(78, 205, 196, 0.3);
+        }
+
+        .btn-secondary-custom {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-secondary-custom:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            padding: 5rem 0;
+            background: var(--light-gray);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .problem-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--accent-orange);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .problem-icon {
+            font-size: 3rem;
+            color: var(--accent-orange);
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+        }
+
+        /* Solution Section */
+        .solution-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--secondary-teal);
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-teal);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+        }
+
+        /* Trust Section */
+        .trust-section {
+            padding: 5rem 0;
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .trust-stat {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .trust-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--secondary-teal);
+            display: block;
+        }
+
+        .trust-label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary-teal);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--secondary-teal) 0%, #3DBDB4 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 5rem 0;
+            background: var(--light-gray);
+        }
+
+        .accordion-button {
+            background: white;
+            color: var(--primary-blue);
+            font-weight: 600;
+            border: none;
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border: none;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .contact-card {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .btn-primary-custom,
+            .btn-secondary-custom {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-clinic-medical me-2"></i>
+                KLINIK PANDAWA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solusi" id="solusiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solusi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="solusiDropdown">
+                            <li><a class="dropdown-item" href="spesialis-kulit-dan-kelamin.html">
+                                <i class="fas fa-stethoscope me-2"></i>Kulit dan Kelamin
+                            </a></li>
+                            <li><a class="dropdown-item" href="seksual-dan-reproduksi.html">
+                                <i class="fas fa-venus-mars me-2"></i>Seksual dan Reproduksi
+                            </a></li>
+                            <li><a class="dropdown-item" href="estetika-dan-anti-aging.html">
+                                <i class="fas fa-spa me-2"></i>Estetika dan Anti Aging
+                            </a></li>
+                            <li><a class="dropdown-item" href="kesehatan-gigi.html">
+                                <i class="fas fa-tooth me-2"></i>Kesehatan Gigi
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#layanan" id="layananDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="layananDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-stethoscope me-2"></i>
+                                            Kulit dan Kelamin
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Dermatologi</h6>
+                                            <a class="dropdown-item" href="#eksim">Eksim</a>
+                                            <a class="dropdown-item" href="#vitiligo">Vitiligo</a>
+                                            <a class="dropdown-item" href="#dermatitis">Dermatitis</a>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Veneraologi</h6>
+                                            <a class="dropdown-item" href="#sifilis">Sifilis</a>
+                                            <a class="dropdown-item" href="#gonore">Gonore</a>
+                                            <a class="dropdown-item" href="#herpes-kelamin">Herpes Kelamin</a>
+                                            <a class="dropdown-item" href="#isk">Infeksi Saluran Kemih</a>
+                                            <a class="dropdown-item" href="#trikomoniasis">Trikomoniasis</a>
+                                            <a class="dropdown-item" href="#kutil-kelamin">Kutil Kelamin</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-venus-mars me-2"></i>
+                                            Seksual dan Reproduksi
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Andrologi</h6>
+                                            <a class="dropdown-item" href="#disfungsi-ereksi">Disfungsi Ereksi</a>
+                                            <a class="dropdown-item" href="#ejakulasi-dini">Ejakulasi Dini</a>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Ginekologi</h6>
+                                            <a class="dropdown-item" href="#vaginoplasty">Vaginoplasty</a>
+                                            <a class="dropdown-item" href="#labiaplasty">Labiaplasty</a>
+                                            <a class="dropdown-item" href="#keputihan">Keputihan</a>
+                                            <a class="dropdown-item" href="#pap-smear">Pap Smear</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-spa me-2"></i>
+                                            Estetika dan Anti Aging
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="#filler">Filler</a>
+                                            <a class="dropdown-item" href="#infus-whitening">Infus Whitening</a>
+                                            <a class="dropdown-item" href="#rhinoplasty">Rhinoplasty</a>
+                                            <a class="dropdown-item" href="#botox">Botox</a>
+                                            <a class="dropdown-item" href="#threadlift">Threadlift</a>
+                                        </div>
+                                        <h6 class="mega-menu-title mt-3">
+                                            <i class="fas fa-tooth me-2"></i>
+                                            Kesehatan Gigi
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="#veneer">Veneer</a>
+                                            <a class="dropdown-item" href="#bleaching">Bleaching</a>
+                                            <a class="dropdown-item" href="#aligner">Aligner</a>
+                                            <a class="dropdown-item" href="#akar-gigi">Akar Gigi</a>
+                                            <a class="dropdown-item" href="#tambal-gigi">Tambal Gigi</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-cut me-2"></i>
+                                            Bedah Minor
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="#sunat-laser">Sunat Laser</a>
+                                        </div>
+                                        
+                                        <div class="mega-menu-cta mt-4">
+                                            <div class="card border-0" style="background: linear-gradient(135deg, var(--secondary-teal), #3DBDB4);">
+                                                <div class="card-body text-white text-center">
+                                                    <h6 class="card-title mb-2">Konsultasi Gratis</h6>
+                                                    <p class="card-text small mb-3">Dapatkan konsultasi dengan dokter spesialis</p>
+                                                    <a href="https://wa.me/6281234567890?text=Halo%20dokter,%20saya%20ingin%20konsultasi%20gratis" class="btn btn-light btn-sm" target="_blank">
+                                                        <i class="fab fa-whatsapp me-1"></i>
+                                                        Chat Sekarang
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang Klinik Pandawa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content fade-in">
+                        <h1 class="hero-title">Khawatir dengan Gejala Infeksi Menular Seksual?</h1>
+                        <p class="hero-subtitle">Dapatkan penanganan medis profesional dalam lingkungan yang aman, nyaman, dan tanpa penghakiman. <strong>Zero Judgment Zone</strong> dengan sistem kerahasiaan berlapis.</p>
+                        <div class="d-flex flex-column flex-md-row gap-3">
+                            <a href="#konsultasi" class="btn btn-primary-custom">
+                                <i class="fas fa-comments me-2"></i>
+                                Konsultasi Gratis Sekarang
+                            </a>
+                            <a href="https://wa.me/6281234567890?text=Halo%20dokter,%20saya%20ingin%20konsultasi%20tentang%20infeksi%20menular%20seksual" class="btn btn-secondary-custom" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>
+                                Chat WhatsApp Dokter
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <small class="text-light">
+                                <i class="fas fa-shield-alt me-2"></i>
+                                Privasi 100% Terjamin • Konsultasi Rahasia • Tanpa Komitmen
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center fade-in">
+                        <img src="dokter_spesialis_team.webp" alt="Tim Dokter Spesialis Klinik Pandawa" class="img-fluid rounded-3 shadow-lg" style="max-width: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title fade-in">Mengapa Menunda Pengobatan Adalah Keputusan Terburuk?</h2>
+                    <p class="section-subtitle fade-in">Setiap hari yang berlalu tanpa penanganan medis yang tepat, risiko komplikasi serius semakin meningkat</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="problem-card fade-in">
+                        <div class="problem-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="problem-title">Komplikasi Medis Serius</h3>
+                        <p>Gonore dapat menyebabkan infertilitas permanen. Sifilis dapat merusak sistem saraf dan jantung. Herpes dapat kambuh dengan intensitas yang semakin parah.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="problem-card fade-in">
+                        <div class="problem-icon">
+                            <i class="fas fa-heart-broken"></i>
+                        </div>
+                        <h3 class="problem-title">Dampak pada Hubungan</h3>
+                        <p>Ketidakpastian status kesehatan mempengaruhi hubungan intim, menimbulkan rasa bersalah, dan menurunkan kualitas hidup secara keseluruhan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="problem-card fade-in">
+                        <div class="problem-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3 class="problem-title">Biaya Semakin Membengkak</h3>
+                        <p>Pengobatan komplikasi jauh lebih mahal dan kompleks. Biaya tidak langsung seperti cuti kerja dan dampak produktivitas terus bertambah.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="alert alert-warning d-inline-block fade-in" style="max-width: 600px;">
+                        <i class="fas fa-clock me-2"></i>
+                        <strong>Jangan tunggu sampai terlambat!</strong> Semakin cepat ditangani, semakin besar peluang kesembuhan total.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="layanan" class="solution-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title fade-in">Klinik Pandawa: Solusi Terpercaya untuk Masalah Sensitif Anda</h2>
+                    <p class="section-subtitle fade-in">Penanganan medis profesional dengan pendekatan yang empatik dan sistem kerahasiaan berlapis</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3 class="feature-title">Zero Judgment Zone</h3>
+                        <p>Lingkungan bebas penghakiman dengan tim medis yang dilatih khusus memberikan pelayanan empatik dan profesional. Setiap pasien diperlakukan dengan hormat penuh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="feature-title">Kerahasiaan Berlapis</h3>
+                        <p>Sistem kerahasiaan berlapis dengan ruang konsultasi pribadi kedap suara, rekam medis terenkripsi, dan protokol privasi ketat untuk seluruh staf.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="feature-title">Dokter Spesialis Berpengalaman</h3>
+                        <p>Tim dokter spesialis kulit dan kelamin dengan pengalaman puluhan tahun, sertifikasi internasional, dan pelatihan berkelanjutan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3 class="feature-title">Teknologi Medis Terkini</h3>
+                        <p>Peralatan diagnostik canggih dengan tes laboratorium hasil cepat, teknologi PCR untuk deteksi DNA virus dan bakteri, serta sistem sterilisasi berstandar internasional.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="feature-title">Pengobatan Personal</h3>
+                        <p>Rencana pengobatan disesuaikan dengan kondisi spesifik setiap pasien, terapi efektif minim efek samping, dan monitoring berkala untuk memastikan kesembuhan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 class="feature-title">Transparansi Biaya</h3>
+                        <p>Paket pengobatan dengan harga transparan, konsultasi awal terjangkau, cicilan 0% untuk pengobatan tertentu, tanpa biaya tersembunyi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section id="tentang" class="trust-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-white fade-in">Dipercaya Ribuan Pasien</h2>
+                    <p class="section-subtitle text-white fade-in">Komitmen kami pada kualitas pelayanan terbukti dari kepuasan pasien</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="trust-stat fade-in">
+                        <span class="trust-number">10,000+</span>
+                        <span class="trust-label">Pasien Terlayani</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="trust-stat fade-in">
+                        <span class="trust-number">98%</span>
+                        <span class="trust-label">Tingkat Kesembuhan</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="trust-stat fade-in">
+                        <span class="trust-number">4.9/5</span>
+                        <span class="trust-label">Rating Kepuasan</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="trust-stat fade-in">
+                        <span class="trust-number">12+</span>
+                        <span class="trust-label">Tahun Pengalaman</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-card fade-in">
+                        <p class="testimonial-text">"Saya sangat terbantu dengan pelayanan yang profesional dan tidak menghakimi. Dokternya sangat sabar menjelaskan kondisi saya."</p>
+                        <p class="testimonial-author">- Pasien A.R.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card fade-in">
+                        <p class="testimonial-text">"Privasi benar-benar terjaga. Saya merasa nyaman dan aman selama proses pengobatan. Highly recommended!"</p>
+                        <p class="testimonial-author">- Pasien M.S.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card fade-in">
+                        <p class="testimonial-text">"Pengobatan yang efektif dengan biaya yang transparan. Tidak ada biaya tambahan yang mengejutkan."</p>
+                        <p class="testimonial-author">- Pasien D.L.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title fade-in">Pertanyaan yang Sering Diajukan</h2>
+                    <p class="section-subtitle fade-in">Jawaban untuk kekhawatiran umum tentang privasi dan pengobatan</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion fade-in" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Apakah privasi saya benar-benar terjamin?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, kami menerapkan sistem kerahasiaan berlapis dengan ruang konsultasi pribadi kedap suara, rekam medis digital terenkripsi, dan protokol kerahasiaan ketat untuk seluruh staf. Informasi medis Anda tidak akan dibagikan kepada pihak manapun tanpa persetujuan tertulis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Berapa lama proses pengobatan?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Durasi pengobatan bervariasi tergantung jenis dan tingkat keparahan infeksi. Umumnya berkisar 1-4 minggu untuk infeksi bakteri, dan manajemen jangka panjang untuk infeksi viral. Dokter akan memberikan estimasi waktu yang akurat setelah diagnosis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Apakah konsultasi pertama benar-benar gratis?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, konsultasi awal gratis untuk 50 pasien pertama setiap bulannya. Ini termasuk konsultasi dengan dokter spesialis dan evaluasi kondisi awal. Biaya tambahan hanya berlaku jika Anda memutuskan untuk melanjutkan dengan pemeriksaan laboratorium atau pengobatan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Bagaimana jika saya merasa malu atau takut?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Kami memahami perasaan Anda dan menciptakan "Zero Judgment Zone" di mana tidak ada penghakiman sama sekali. Tim medis kami dilatih khusus untuk memberikan pelayanan yang empatik dan supportif. Anda dapat memulai dengan konsultasi online atau chat WhatsApp untuk merasa lebih nyaman.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="konsultasi" class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="cta-title fade-in">Jangan Biarkan Kekhawatiran Menguasai Hidup Anda</h2>
+                    <p class="cta-subtitle fade-in">Dapatkan konsultasi gratis dengan dokter spesialis kami hari ini juga. Privasi terjamin, tanpa komitmen.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3 fade-in">
+                        <a href="https://wa.me/6281234567890?text=Halo%20dokter,%20saya%20ingin%20konsultasi%20gratis%20tentang%20infeksi%20menular%20seksual" class="btn btn-primary-custom btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>
+                            Konsultasi Gratis via WhatsApp
+                        </a>
+                        <a href="tel:+6281234567890" class="btn btn-secondary-custom btn-lg">
+                            <i class="fas fa-phone me-2"></i>
+                            Hubungi Sekarang
+                        </a>
+                    </div>
+                    <div class="mt-4 fade-in">
+                        <small class="text-light">
+                            <i class="fas fa-clock me-2"></i>
+                            Konsultasi gratis terbatas untuk 50 pasien pertama bulan ini
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title fade-in">Hubungi Kami</h2>
+                    <p class="section-subtitle fade-in">Berbagai cara untuk menghubungi tim medis kami</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <p>Chat langsung dengan dokter</p>
+                        <a href="https://wa.me/6281234567890" class="btn btn-outline-primary" target="_blank">Chat Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Telepon</h4>
+                        <p>Konsultasi langsung</p>
+                        <a href="tel:+6281234567890" class="btn btn-outline-primary">Hubungi</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Lokasi</h4>
+                        <p>Jakarta Pusat</p>
+                        <a href="#" class="btn btn-outline-primary">Lihat Peta</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Jam Operasional</h4>
+                        <p>Senin - Minggu<br>08:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20dokter,%20saya%20ingin%20konsultasi%20tentang%20infeksi%20menular%20seksual" class="whatsapp-float pulse-animation" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(46, 91, 186, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'var(--primary-blue)';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+        // WhatsApp click tracking
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // Track WhatsApp clicks for analytics
+                console.log('WhatsApp consultation clicked');
+            });
+        });
+
+        // Form validation and submission (if needed)
+        function validateForm(form) {
+            // Add form validation logic here
+            return true;
+        }
+
+        // Auto-hide alerts after 5 seconds
+        setTimeout(function() {
+            const alerts = document.querySelectorAll('.alert');
+            alerts.forEach(alert => {
+                alert.style.transition = 'opacity 0.5s ease';
+                alert.style.opacity = '0';
+                setTimeout(() => alert.remove(), 500);
+            });
+        }, 5000);
+    </script>
+</body>
+</html>
+
