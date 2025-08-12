@@ -40,7 +40,32 @@
             font-family: 'Inter', sans-serif; 
             line-height: 1.6; 
             color: #2c3e50; 
-            padding-top: 140px; 
+        }
+
+        /* Header Affix */
+        .header-affix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: var(--header-height, 140px);
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                margin-top: var(--header-height-mobile, 120px);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .main-content {
+                margin-top: var(--header-height-small, 100px);
+            }
         }
 
         /* Top Bar Styles */
@@ -49,11 +74,6 @@
             color: white;
             padding: 8px 0;
             font-size: 14px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1030;
         }
 
         .top-bar a {
@@ -70,11 +90,6 @@
             background: white !important;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 15px 0;
-            position: fixed;
-            top: 40px;
-            left: 0;
-            right: 0;
-            z-index: 1020;
         }
 
         .navbar-brand {
@@ -614,27 +629,49 @@
             }
         }
     </style>
+    
+    <script>
+        function setHeaderHeight() {
+            const header = document.querySelector('.header-affix');
+            if (header) {
+                const height = header.offsetHeight;
+                document.documentElement.style.setProperty('--header-height', height + 'px');
+                
+                // Set responsive heights
+                if (window.innerWidth <= 576) {
+                    document.documentElement.style.setProperty('--header-height-small', height + 'px');
+                } else if (window.innerWidth <= 768) {
+                    document.documentElement.style.setProperty('--header-height-mobile', height + 'px');
+                }
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', setHeaderHeight);
+        window.addEventListener('resize', setHeaderHeight);
+    </script>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <i class="fas fa-clock"></i> Buka Setiap Hari: 08:00 - 21:00 WIB
-                    <span class="mx-2">|</span>
-                    <i class="fas fa-award"></i> Akreditasi Paripurna Kemenkes RI
-                </div>
-                <div class="col-md-6 text-end">
-                    <i class="fas fa-phone"></i> <a href="tel:081234567890" class="text-white text-decoration-none">0812-3456-7890</a>
-                    <span class="mx-2">|</span>
-                    <i class="fas fa-envelope"></i> <a href="mailto:info@klinikpandawa.id" class="text-white text-decoration-none">info@klinikpandawa.id</a>
+    <!-- Header -->
+    <div class="header-affix">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <i class="fas fa-clock"></i> Buka Setiap Hari: 08:00 - 20:00 WIB
+                        <span class="mx-2">|</span>
+                        <i class="fas fa-award"></i> Akreditasi Paripurna Kemenkes RI
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281234567890" class="text-white text-decoration-none">0812-3456-7890</a>
+                        <span class="mx-2">|</span>
+                        <i class="fas fa-envelope"></i> <a href="mailto:info@klinikpandawa.id" class="text-white text-decoration-none">info@klinikpandawa.id</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Navigation -->
+        <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="../beranda.html">
@@ -773,7 +810,10 @@
             </div>
         </div>
     </nav>
+    </div>
 
+    <!-- Main Content -->
+    <div class="main-content">
     <!-- Breadcrumb -->
     <section class="breadcrumb-section">
         <div class="container">
@@ -1180,6 +1220,7 @@
             </div>
         </div>
     </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
