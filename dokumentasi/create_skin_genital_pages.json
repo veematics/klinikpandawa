@@ -1,0 +1,144 @@
+{
+  "results": [
+    {
+      "input": "Eksim - Penanganan eksim dan dermatitis atopik dengan terapi komprehensif",
+      "output": {
+        "filename": "eksim.html",
+        "title": "Eksim - Penanganan Eksim dan Dermatitis Atopik - Klinik Utama Pandawa Jakarta",
+        "service_category": "Dermatologi",
+        "target_audience": "Individu yang menderita eksim atau dermatitis atopik, mengalami gejala seperti gatal, kulit kering, ruam, serta dampak emosional dan sosial akibat kondisi kulit mereka.",
+        "key_problems": "Gatal Tak Tertahankan; Kulit Kering dan Bersisik; Ruam Merah dan Peradangan; Dampak Emosional dan Sosial",
+        "solution_highlights": "Pendekatan Personal & Terapi Inovatif; Terapi Komprehensif yang Disesuaikan; Tim Dokter Spesialis Berpengalaman; Pendekatan Empati & Zero Judgment Zone; Teknologi Medis Terkini; Rencana Perawatan Personal",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin berkonsultasi mengenai penanganan eksim dan dermatitis atopik.",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Vitiligo - Pengobatan vitiligo dan gangguan pigmentasi dengan terapi repigmentasi",
+      "output": {
+        "filename": "vitiligo.html",
+        "title": "Vitiligo - Pengobatan Vitiligo dan Gangguan Pigmentasi dengan Terapi Repigmentasi",
+        "service_category": "Dermatologi",
+        "target_audience": "Pasien dengan vitiligo yang mencari solusi pengobatan efektif dan aman, serta dukungan emosional dalam lingkungan bebas stigma.",
+        "key_problems": "Bercak putih yang terus menyebar; Kepercayaan diri yang memudar; Stres dan kecemasan; Ketidakpastian pengobatan.",
+        "solution_highlights": "Terapi repigmentasi komprehensif; Teknologi medis terkini; Perawatan dermatologis ahli; Stimulasi sel melanosit; Hasil permanen dan memuaskan.",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin konsultasi tentang pengobatan vitiligo dan terapi repigmentasi. Mohon informasi lebih lanjut.",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Dermatitis - Penanganan berbagai jenis dermatitis dengan perawatan anti-inflamasi",
+      "output": {
+        "filename": "dermatitis.html",
+        "title": "Layanan Dermatitis: Solusi Komprehensif untuk Kulit Sehat Anda",
+        "service_category": "Dermatologi",
+        "target_audience": "Pasien yang mengalami masalah kulit seperti gatal, ruam, kulit kering, dan peradangan akibat dermatitis, serta mencari solusi penanganan yang efektif dan komprehensif.",
+        "key_problems": "Gatal tak tertahankan, kulit kering dan bersisik, peradangan dan kemerahan, dampak pada kepercayaan diri.",
+        "solution_highlights": "Pendekatan personal untuk setiap jenis dermatitis, terapi anti-inflamasi inovatif, edukasi dan pencegahan, kontrol dan evaluasi rutin.",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin konsultasi mengenai Dermatitis. Bisakah Anda membantu?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Sifilis - Diagnosis dan pengobatan sifilis (raja singa) dengan terapi antibiotik",
+      "output": {
+        "filename": "sifilis-diagnosis-pengobatan.html",
+        "title": "Sifilis - Diagnosis dan Pengobatan - Klinik Utama Pandawa Jakarta",
+        "service_category": "Veneraologi",
+        "target_audience": "Individu yang mengalami gejala sifilis, membutuhkan diagnosis akurat, pengobatan, dan dukungan tanpa penghakiman.",
+        "key_problems": "Kecemasan Akibat Gejala yang Tidak Jelas; Stigma dan Ketakutan Akan Penghakiman; Keterlambatan Diagnosis dan Komplikasi Serius; Dampak Emosional dan Psikologis",
+        "solution_highlights": "Diagnosis Akurat dengan Teknologi Terkini; Terapi Antibiotik Standar Emas yang Efektif; Pendekatan Holistik dan Dukungan Penuh",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin berkonsultasi mengenai diagnosis dan pengobatan sifilis.",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Gonore - Penanganan gonore (kencing nanah) dengan antibiotik tepat sasaran",
+      "output": {
+        "filename": "gonore.html",
+        "title": "Gonore (Kencing Nanah): Penanganan dengan Antibiotik Tepat Sasaran - Klinik Utama Pandawa Jakarta",
+        "service_category": "Veneraologi",
+        "target_audience": "Individu yang mengalami gejala gonore atau memiliki kekhawatiran terkait infeksi menular seksual, mencari penanganan yang efektif, rahasia, dan tanpa penghakiman.",
+        "key_problems": "Gejala yang mengganggu dan memalukan; Ketakutan akan stigma sosial; Risiko komplikasi serius; Kurangnya informasi akurat dan terpercaya.",
+        "solution_highlights": "Pendekatan Medis Berbasis Bukti dan Terkini; Tim Dokter Spesialis Berpengalaman dan Empati; Lingkungan 'Zero Judgment Zone' dan Privasi Terjamin; Layanan Komprehensif dan Terintegrasi; Fasilitas Nyaman dan Akses Mudah.",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin bertanya tentang penanganan gonore setelah membaca informasi di website Anda.",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Herpes Kelamin - Pengobatan herpes genital dengan terapi antiviral",
+      "output": {
+        "filename": "herpes-kelamin.html",
+        "title": "Herpes Kelamin - Pengobatan dengan Terapi Antiviral",
+        "service_category": "Venerologi",
+        "target_audience": "Individu yang terinfeksi Herpes Kelamin dan mencari pengobatan yang efektif, empati, serta tanpa penghakiman.",
+        "key_problems": "Luka dan nyeri berulang, dampak psikologis dan stigma, risiko penularan, kesalahpahaman dan mitos.",
+        "solution_highlights": "Mengurangi frekuensi dan keparahan wabah, mempercepat penyembuhan luka, menurunkan risiko penularan, meningkatkan kualitas hidup.",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin berkonsultasi mengenai Herpes Kelamin dan pengobatannya.",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Infeksi Saluran Kemih - Penanganan ISK dengan antibiotik spesifik",
+      "output": {
+        "filename": "infeksi-saluran-kemih.html",
+        "title": "Infeksi Saluran Kemih - Penanganan ISK dengan Antibiotik Spesifik",
+        "service_category": "Veneraologi",
+        "target_audience": "Pasien dengan gejala Infeksi Saluran Kemih (ISK) yang mencari penanganan medis yang efektif, komprehensif, dan tanpa penghakiman.",
+        "key_problems": "Nyeri dan sensasi terbakar saat buang air kecil; Frekuensi buang air kecil meningkat dan mendesak; Urine keruh, berbau menyengat, atau berdarah; Demam, menggigil, dan rasa lelah.",
+        "solution_highlights": "Diagnosis akurat dengan pemeriksaan urine; Pemilihan antibiotik spesifik yang tepat; Edukasi komprehensif dan konseling; Pemantauan dan tindak lanjut berkelanjutan.",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin bertanya tentang penanganan ISK dengan antibiotik spesifik.",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Trikomoniasis - Pengobatan trikomoniasis dengan terapi antiprotozoal",
+      "output": {
+        "filename": "trikomoniasis.html",
+        "title": "Mengatasi Trikomoniasis: Solusi Efektif untuk Kesehatan Optimal Anda",
+        "service_category": "Veneraologi",
+        "target_audience": "Pasien dengan gejala trikomoniasis yang mencari penanganan profesional, rahasia, dan empatik.",
+        "key_problems": "Keputihan Abnormal dan Bau Tidak Sedap; Gatal dan Nyeri pada Area Genital; Nyeri Saat Buang Air Kecil atau Berhubungan Seksual; Risiko Komplikasi Jangka Panjang",
+        "solution_highlights": "Terapi Antiprotozoal Terkini; Pendekatan Holistik; Privasi dan Kerahasiaan Terjamin; Tim Medis Berpengalaman",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin bertanya lebih lanjut mengenai pengobatan Trikomoniasis. Apakah saya bisa mendapatkan konsultasi?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Kutil Kelamin - Penanganan kondiloma akuminata dengan terapi laser",
+      "output": {
+        "filename": "kutil-kelamin.html",
+        "title": "Kutil Kelamin - Penanganan Kondiloma Akuminata dengan Terapi Laser",
+        "service_category": "Veneraologi",
+        "target_audience": "Pasien yang mengalami kutil kelamin dan mencari penanganan medis yang efektif, aman, dan tanpa stigma, dengan fokus pada privasi dan kenyamanan.",
+        "key_problems": "Stigma dan kecemasan sosial; Dampak pada hubungan intim dan kualitas hidup; Kebutuhan akan penanganan yang efektif dan aman; Pencarian lingkungan medis yang mendukung.",
+        "solution_highlights": "Terapi laser presisi tinggi; Efektivitas optimal; Penyembuhan cepat; Minim nyeri dan pendarahan; Risiko kekambuhan rendah; Pendekatan holistik dan empati.",
+        "whatsapp_message": "Halo Klinik Pandawa, saya ingin berkonsultasi mengenai penanganan kutil kelamin dengan terapi laser.",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Dermatitis Kontak - Penanganan dermatitis kontak dengan identifikasi alergen",
+      "output": {
+        "filename": "dermatitis-kontak.html",
+        "title": "Dermatitis Kontak - Penanganan Komprehensif dengan Identifikasi Alergen",
+        "service_category": "Dermatologi",
+        "target_audience": "Individu dari segala usia yang mengalami gejala dermatitis kontak (gatal, ruam, iritasi) dan mencari diagnosis akurat serta penanganan komprehensif",
+        "key_problems": "Gatal tak tertahankan, ruam merah dan bengkak, kulit kering dan pecah-pecah, dampak psikologis",
+        "solution_highlights": "Diagnosis akurat dengan patch test, terapi individual, edukasi pencegahan, pendekatan holistik dengan Zero Judgment Zone",
+        "whatsapp_message": "Halo Klinik Utama Pandawa, saya ingin menjadwalkan konsultasi mengenai dermatitis kontak. Bisakah saya mendapatkan informasi lebih lanjut?",
+        "status": "Success"
+      },
+      "error": ""
+    }
+  ]
+}

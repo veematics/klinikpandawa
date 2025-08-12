@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}} - Klinik Utama Pandawa Jakarta</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <meta name="keywords" content="{{KEYWORDS}}">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #1e4080;
+            --accent-color: #4a90e2;
+            --secondary-teal: #3DBDB4;
+            --success-color: #28a745;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --light-blue: #e8f4fd;
+            --text-dark: #2c3e50;
+            --text-muted: #6c757d;
+            --border-color: #e9ecef;
+            --service-primary: {{SERVICE_COLOR_PRIMARY}};
+            --service-secondary: {{SERVICE_COLOR_SECONDARY}};
+            --service-light: {{SERVICE_COLOR_LIGHT}};
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            padding-top: 140px; /* Account for fixed navbar */
+        }
+
+        /* Top Bar Styles */
+        .top-bar {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .top-bar a:hover {
+            color: #f8f9fa;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            top: 40px;
+            left: 0;
+            right: 0;
+            z-index: 1020;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--primary-color) !important;
+            text-decoration: none;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--text-dark) !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* Mega Menu Styles */
+        .mega-menu {
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 0;
+            margin-top: 0;
+        }
+
+        .mega-menu-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+
+        .mega-menu-subtitle {
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+        .mega-menu-section {
+            margin-bottom: 20px;
+        }
+
+        .mega-menu .dropdown-item {
+            padding: 8px 15px;
+            color: var(--text-dark);
+            font-size: 14px;
+            border-radius: 5px;
+            margin-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .mega-menu .dropdown-item:hover {
+            background-color: var(--light-blue);
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+
+        .mega-menu-cta .card {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Breadcrumb Styles */
+        .breadcrumb-section {
+            background: var(--service-light);
+            padding: 15px 0;
+            margin-top: 0;
+        }
+
+        .breadcrumb {
+            background: transparent;
+            margin-bottom: 0;
+        }
+
+        .breadcrumb-item a {
+            color: var(--service-primary);
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: var(--text-dark);
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background: linear-gradient(135deg, var(--service-primary), var(--service-secondary));
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('{{HERO_IMAGE}}') center/cover;
+            opacity: 0.2;
+        }
+
+        /* Button Styles */
+        .btn-konsultasi {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-konsultasi:hover {
+            transform: translateY(-2px);
+            color: white;
+            box-shadow: 0 5px 15px rgba(44, 90, 160, 0.3);
+        }
+
+        /* Problem Cards */
+        .problem-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--service-primary);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .problem-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--service-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--service-primary);
+            font-size: 30px;
+        }
+
+        /* Agitate Section */
+        .agitate-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .agitate-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--danger-color);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .agitate-card:hover {
+            transform: translateX(5px);
+        }
+
+        /* Solution Section */
+        .solution-section {
+            padding: 80px 0;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--service-primary);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--service-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--service-primary);
+            font-size: 30px;
+        }
+
+        /* Process Section */
+        .process-section {
+            background: var(--light-blue);
+            padding: 80px 0;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            background: var(--service-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+        }
+
+        .accordion-button {
+            background-color: var(--service-light);
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--service-primary);
+            color: white;
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background: var(--light-blue);
+            padding: 80px 0;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            height: 100%;
+        }
+
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: var(--service-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--service-primary);
+            font-size: 30px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--service-primary), var(--service-secondary));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer h5, .footer h6 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer .social-links a:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            body {
+                padding-top: 120px;
+            }
+            
+            .mega-menu {
+                position: static !important;
+                width: 100% !important;
+                box-shadow: none;
+                border-top: 1px solid var(--border-color);
+            }
+            
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .hero-section::before {
+                display: none;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding-top: 100px;
+            }
+            
+            .top-bar {
+                font-size: 12px;
+                padding: 5px 0;
+            }
+            
+            .navbar {
+                padding: 10px 0;
+            }
+            
+            .navbar-brand {
+                font-size: 20px;
+            }
+            
+            .hero-section {
+                padding: 40px 0;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-clock"></i> Buka Setiap Hari: 08:00 - 21:00 WIB
+                    <span class="mx-2">|</span>
+                    <i class="fas fa-award"></i> Akreditasi Paripurna Kemenkes RI
+                </div>
+                <div class="col-md-6 text-end">
+                    <i class="fas fa-phone"></i> <a href="tel:081234567890">0812-3456-7890</a>
+                    <span class="mx-2">|</span>
+                    <i class="fas fa-envelope"></i> <a href="mailto:info@klinikpandawa.id">info@klinikpandawa.id</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="{{BASE_URL}}beranda.html">
+                <i class="fas fa-clinic-medical me-2"></i>
+                KLINIK PANDAWA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_URL}}beranda.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solusiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solusi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="solusiDropdown">
+                            <li><a class="dropdown-item" href="{{BASE_URL}}spesialis-kulit-dan-kelamin.html">
+                                <i class="fas fa-stethoscope me-2"></i>Kulit dan Kelamin
+                            </a></li>
+                            <li><a class="dropdown-item" href="{{BASE_URL}}seksual-dan-reproduksi.html">
+                                <i class="fas fa-venus-mars me-2"></i>Seksual dan Reproduksi
+                            </a></li>
+                            <li><a class="dropdown-item" href="{{BASE_URL}}estetika-dan-anti-aging.html">
+                                <i class="fas fa-spa me-2"></i>Estetika dan Anti Aging
+                            </a></li>
+                            <li><a class="dropdown-item" href="{{BASE_URL}}kesehatan-gigi.html">
+                                <i class="fas fa-tooth me-2"></i>Kesehatan Gigi
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="layananDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="layananDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-stethoscope me-2"></i>
+                                            Kulit dan Kelamin
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Dermatologi</h6>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/eksim.html">Eksim</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/vitiligo.html">Vitiligo</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/dermatitis.html">Dermatitis</a>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Veneraologi</h6>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/sifilis-diagnosis-pengobatan.html">Sifilis</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/gonore.html">Gonore</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/herpes-kelamin.html">Herpes Kelamin</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/infeksi-saluran-kemih.html">Infeksi Saluran Kemih</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/trikomoniasis.html">Trikomoniasis</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/kutil-kelamin.html">Kutil Kelamin</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-venus-mars me-2"></i>
+                                            Seksual dan Reproduksi
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Andrologi</h6>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/disfungsi-ereksi.html">Disfungsi Ereksi</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/ejakulasi-dini.html">Ejakulasi Dini</a>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle">Ginekologi</h6>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/vaginoplasty.html">Vaginoplasty</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/labiaplasty.html">Labiaplasty</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/keputihan.html">Keputihan</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/pap-smear.html">Pap Smear</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-spa me-2"></i>
+                                            Estetika dan Anti Aging
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/filler.html">Filler</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/infus-whitening.html">Infus Whitening</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/rhinoplasty.html">Rhinoplasty</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/botox.html">Botox</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/threadlift.html">Threadlift</a>
+                                        </div>
+                                        <h6 class="mega-menu-title mt-3">
+                                            <i class="fas fa-tooth me-2"></i>
+                                            Kesehatan Gigi
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/veneer.html">Veneer</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/bleaching.html">Bleaching</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/klar-aligner.html">Aligner</a>
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/akar-gigi.html">Akar Gigi</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title">
+                                            <i class="fas fa-cut me-2"></i>
+                                            Bedah Minor
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="{{BASE_URL}}layanan/sunat-laser.html">Sunat Laser</a>
+                                        </div>
+                                        
+                                        <div class="mega-menu-cta mt-4">
+                                            <div class="card border-0" style="background: linear-gradient(135deg, var(--secondary-teal), #3DBDB4);">
+                                                <div class="card-body text-white text-center">
+                                                    <h6 class="card-title mb-2">Konsultasi Gratis</h6>
+                                                    <p class="card-text small mb-3">Dapatkan konsultasi dengan dokter spesialis</p>
+                                                    <a href="https://wa.me/6281234567890?text=Halo%20dokter,%20saya%20ingin%20konsultasi%20gratis" class="btn btn-light btn-sm" target="_blank">
+                                                        <i class="fab fa-whatsapp me-1"></i>
+                                                        Chat Sekarang
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_URL}}tentang-klinik.html">Tentang Klinik Pandawa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_URL}}hubungi-kami.html">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    {{BREADCRUMB_CONTENT}}
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT GOES HERE -->
+    {{MAIN_CONTENT}}
+
+    <!-- WhatsApp Float Button -->
+    <a href="{{WHATSAPP_LINK}}" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-clinic-medical me-2"></i> Klinik Utama Pandawa</h5>
+                    <p class="mb-3">Klinik spesialis terpercaya dengan layanan kesehatan komprehensif dan berkualitas tinggi. Melayani dengan pendekatan empati dan zero judgment zone.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6>Solusi</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{BASE_URL}}spesialis-kulit-dan-kelamin.html">Kulit & Kelamin</a></li>
+                        <li><a href="{{BASE_URL}}seksual-dan-reproduksi.html">Seksual & Reproduksi</a></li>
+                        <li><a href="{{BASE_URL}}estetika-dan-anti-aging.html">Estetika & Anti Aging</a></li>
+                        <li><a href="{{BASE_URL}}kesehatan-gigi.html">Kesehatan Gigi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6>Layanan Populer</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{BASE_URL}}layanan/infus-whitening.html">Infus Whitening</a></li>
+                        <li><a href="{{BASE_URL}}layanan/filler.html">Filler</a></li>
+                        <li><a href="{{BASE_URL}}layanan/veneer.html">Veneer Gigi</a></li>
+                        <li><a href="{{BASE_URL}}layanan/botox.html">Botox</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6>Informasi</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{BASE_URL}}tentang-klinik.html">Tentang Kami</a></li>
+                        <li><a href="{{BASE_URL}}hubungi-kami.html">Kontak</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6>Kontak</h6>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i><a href="tel:081234567890">0812-3456-7890</a></p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i><a href="mailto:info@klinikpandawa.id">info@klinikpandawa.id</a></p>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>Jakarta, Indonesia</p>
+                    <p class="mb-0"><i class="fas fa-clock me-2"></i>08:00 - 21:00 WIB</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Klinik Utama Pandawa. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#" class="me-3">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    bootstrap.Collapse.getInstance(navbarCollapse).hide();
+                }
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.problem-card, .service-card, .agitate-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+{
+  "results": [
+    {
+      "input": "Filler - Perawatan filler wajah dan bibir untuk hasil natural dan awet muda",
+      "output": {
+        "filename": "filler.html",
+        "title": "Filler - Perawatan Wajah dan Bibir untuk Hasil Natural dan Awet Muda",
+        "service_category": "Estetika",
+        "target_audience": "Individu yang khawatir dengan tanda-tanda penuaan dini seperti garis halus, kerutan, dan hilangnya volume pada wajah dan bibir, serta mencari solusi estetika yang natural, aman, dan efektif untuk mengembalikan penampilan awet muda dan meningkatkan kepercayaan diri.",
+        "key_problems": "1. Kehilangan volume wajah (pipi kendur, bawah mata cekung, garis senyum dalam). 2. Penurunan kepercayaan diri akibat penampilan menua. 3. Proses penuaan alami (hilangnya kolagen dan elastin).",
+        "solution_highlights": "1. Hasil natural dan tahan lama. 2. Aman dan teruji klinis. 3. Minimal downtime. 4. Personalisasi perawatan. 5. Dukungan pasca-perawatan komprehensif.",
+        "whatsapp_message": "Halo Klinik Utama Pandawa, saya tertarik dengan layanan filler wajah dan bibir. Bisakah saya mendapatkan informasi lebih lanjut?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Rhinoplasty - Operasi plastik hidung untuk hasil proporsional dan natural",
+      "output": {
+        "filename": "rhinoplasty.html",
+        "title": "Rhinoplasty - Operasi plastik hidung untuk hasil proporsional dan natural",
+        "service_category": "Estetika",
+        "target_audience": "Individu yang merasa kurang percaya diri dengan bentuk hidung yang kurang proporsional, mencari solusi estetika yang natural, atau memiliki masalah pernapasan terkait struktur hidung.",
+        "key_problems": "Bentuk hidung kurang proporsional; Kurangnya kepercayaan diri; Masalah pernapasan (Deviasi Septum); Hasil operasi sebelumnya yang tidak memuaskan.",
+        "solution_highlights": "Dokter Bedah Plastik Berpengalaman; Pendekatan Personal & Konsultasi Mendalam; Teknologi Modern & Fasilitas Lengkap; Hasil Natural dan Harmonis; Prioritas Keamanan & Kenyamanan Pasien.",
+        "whatsapp_message": "Halo Klinik Utama Pandawa, saya tertarik dengan layanan Rhinoplasty dan ingin berkonsultasi. Bisakah Anda memberikan informasi lebih lanjut?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Botox - Perawatan botox anti-aging untuk menghilangkan kerutan dinamis",
+      "output": {
+        "filename": "botox.html",
+        "title": "Botox - Perawatan Anti-Aging untuk Menghilangkan Kerutan Dinamis",
+        "service_category": "Estetika",
+        "target_audience": "Individu yang mendambakan penampilan awet muda dan kulit halus, terganggu oleh kerutan dinamis seperti kerutan dahi, glabella, dan crow's feet, serta mencari solusi efektif, aman, dan natural.",
+        "key_problems": "Kerutan dahi yang mengganggu; Garis glabella (kerutan di antara alis); Kerutan mata (crow's feet); Penampilan wajah yang lelah atau kurang segar.",
+        "solution_highlights": "Efektivitas Tinggi; Non-Invasif dan Minimal Downtime; Hasil Natural dan Estetis; Profil Keamanan yang Teruji; Pencegahan Kerutan; Peningkatan Kepercayaan Diri.",
+        "whatsapp_message": "Halo Klinik Pandawa, saya tertarik dengan perawatan Botox untuk menghilangkan kerutan dinamis. Bisakah saya mendapatkan informasi lebih lanjut?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Threadlift - Tanam benang pengencang wajah untuk lifting non-bedah",
+      "output": {
+        "filename": "threadlift.html",
+        "title": "Threadlift: Solusi Non-Bedah untuk Wajah Kencang dan Awet Muda",
+        "service_category": "Estetika",
+        "target_audience": "Individu berusia 30-an hingga 50-an dengan kulit kendur ringan hingga sedang, garis halus, dan kerutan, yang menginginkan peremajaan wajah tanpa operasi bedah.",
+        "key_problems": "Kulit kendur dan kerutan; Hilangnya elastisitas kulit; Kontur wajah tidak tegas; Penurunan rasa percaya diri akibat tanda penuaan.",
+        "solution_highlights": "Pengencangan dan pengangkatan kulit wajah tanpa bedah; Stimulasi produksi kolagen alami; Hasil natural dan minim downtime; Prosedur minimal invasif.",
+        "whatsapp_message": "Halo, saya tertarik dengan layanan Threadlift. Bisakah Anda memberikan informasi lebih lanjut?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Veneer - Veneer gigi porselen untuk senyuman sempurna dan natural",
+      "output": {
+        "filename": "veneer.html",
+        "title": "Veneer Gigi Porselen - Senyuman Sempurna dan Natural",
+        "service_category": "Kesehatan Gigi",
+        "target_audience": "Individu yang ingin memperbaiki penampilan gigi (berubah warna, tidak rata, celah) dan meningkatkan kepercayaan diri.",
+        "key_problems": "Gigi berubah warna, bentuk tidak ideal (tidak rata, renggang, celah), kurang percaya diri karena kondisi gigi.",
+        "solution_highlights": "Hasil natural dan tahan lama (10-15 tahun), menutupi perubahan warna, memperbaiki bentuk gigi, menutup celah, tahan noda, tampilan alami.",
+        "whatsapp_message": "Halo, saya tertarik dengan layanan Veneer Gigi Porselen. Bisakah saya mendapatkan konsultasi gratis dan informasi lebih detail tentang prosedur, biaya, dan jadwal yang tersedia?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Bleaching - Pemutihan gigi profesional untuk hasil instan dan aman",
+      "output": {
+        "filename": "bleaching.html",
+        "title": "Bleaching - Pemutihan Gigi Profesional untuk Hasil Instan dan Aman",
+        "service_category": "Kesehatan Gigi",
+        "target_audience": "Individu yang merasa kurang percaya diri karena warna gigi yang kusam, kuning, atau bernoda, serta menginginkan senyum yang lebih cerah dan percaya diri.",
+        "key_problems": "Senyum kurang percaya diri akibat gigi kuning atau kusam; Menghindari senyum lebar karena malu dengan penampilan gigi; Gigi kusam dapat memengaruhi kesan profesional dan kredibilitas; Risiko solusi tidak aman jika mencoba produk pemutihan abal-abal.",
+        "solution_highlights": "Hasil Instan & Aman dengan Teknologi Terdepan",
+        "whatsapp_message": "Halo Klinik Utama Pandawa, saya tertarik dengan layanan Bleaching Gigi. Bisakah saya mendapatkan informasi lebih lanjut?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Aligner - Behel transparan KLAR Aligner untuk gigi rapi tanpa kawat",
+      "output": {
+        "filename": "klar-aligner.html",
+        "title": "KLAR Aligner - Behel Transparan untuk Gigi Rapi Tanpa Kawat - Klinik Utama Pandawa Jakarta",
+        "service_category": "Kesehatan Gigi",
+        "target_audience": "Individu yang memiliki masalah gigi tidak rapi atau berjejal, enggan menggunakan behel kawat konvensional karena alasan estetika atau ketidaknyamanan, serta mencari solusi ortodontik yang modern, nyaman, dan efektif.",
+        "key_problems": "Gigi tidak rapi atau berjejal; Malu dengan penampilan behel kawat; Kesulitan makan dan menjaga kebersihan dengan behel kawat; Rasa sakit dan iritasi akibat kawat behel.",
+        "solution_highlights": "Hampir Tidak Terlihat; Nyaman Digunakan; Efektif dan Terprediksi; Fleksibel dan Praktis; Perawatan Lebih Singkat.",
+        "whatsapp_message": "Halo, saya tertarik dengan layanan KLAR Aligner. Bisakah saya mendapatkan informasi lebih lanjut atau menjadwalkan konsultasi?",
+        "status": "Success"
+      },
+      "error": ""
+    },
+    {
+      "input": "Akar Gigi - Perawatan saluran akar untuk menyelamatkan gigi berlubang parah",
+      "output": {
+        "filename": "akar-gigi.html",
+        "title": "Perawatan Saluran Akar - Klinik Utama Pandawa Jakarta",
+        "service_category": "Kesehatan Gigi",
+        "target_audience": "Pasien dengan gigi berlubang parah, nyeri gigi, atau infeksi saluran akar yang ingin menyelamatkan gigi alami mereka.",
+        "key_problems": "Nyeri gigi hebat dan berdenyut; Gigi sensitif berkepanjangan; Pembengkakan gusi atau wajah; Munculnya benjolan mirip jerawat pada gusi.",
+        "solution_highlights": "Menyelamatkan gigi alami; Mengatasi nyeri dan infeksi; Teknologi canggih; Dokter gigi spesialis; Kenyamanan pasien.",
+        "whatsapp_message": "Halo Klinik Utama Pandawa Jakarta, saya ingin bertanya tentang perawatan saluran akar. Bisakah Anda membantu saya?",
+        "status": "Success"
+      },
+      "error": ""
+    }
+  ]
+}

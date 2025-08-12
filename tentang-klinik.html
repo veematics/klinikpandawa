@@ -34,12 +34,7 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background-color: #ffffff;
-        }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #2c3e50; padding-top: 140px; }
 
         /* Header Styles */
         .top-bar {
@@ -832,196 +827,163 @@
     </style>
 </head>
 <body>
-    <!-- Top Bar -->
+        <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
-            <div class="top-bar-left">
-                <div>
-                    <i class="fas fa-clock"></i>
-                    Buka Setiap Hari: 08:00 - 21:00 WIB
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <i class="fas fa-clock"></i> Buka Setiap Hari: 08:00 - 21:00 WIB
+                    <span class="mx-2">|</span>
+                    <i class="fas fa-award"></i> Akreditasi Paripurna Kemenkes RI
                 </div>
-                <div>
-                    <i class="fas fa-shield-alt"></i>
-                    Akreditasi Paripurna Kemenkes RI
+                <div class="col-md-6 text-end">
+                    <i class="fas fa-phone"></i> <a href="tel:081234567890" class="text-white text-decoration-none">0812-3456-7890</a>
+                    <span class="mx-2">|</span>
+                    <i class="fas fa-envelope"></i> <a href="mailto:info@klinikpandawa.id" class="text-white text-decoration-none">info@klinikpandawa.id</a>
                 </div>
-            </div>
-            <div class="top-bar-right">
-                <a href="tel:+6281234567890">
-                    <i class="fas fa-phone"></i>
-                    0812-3456-7890
-                </a>
-                <a href="mailto:info@klinikpandawa.id">
-                    <i class="fas fa-envelope"></i>
-                    info@klinikpandawa.id
-                </a>
             </div>
         </div>
     </div>
 
-    <!-- Main Header -->
-    <header class="main-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <i class="fas fa-hospital-alt"></i>
-                    Klinik Pandawa
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                <i class="fas fa-home"></i> Beranda
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-heart-pulse"></i> Solusi
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="spesialis-kulit-dan-kelamin.html">
-                                    <i class="fas fa-user-md"></i> Kulit dan Kelamin
-                                </a></li>
-                                <li><a class="dropdown-item" href="seksual-dan-reproduksi.html">
-                                    <i class="fas fa-venus-mars"></i> Seksual dan Reproduksi
-                                </a></li>
-                                <li><a class="dropdown-item" href="estetika-dan-anti-aging.html">
-                                    <i class="fas fa-magic"></i> Estetika dan Anti Aging
-                                </a></li>
-                                <li><a class="dropdown-item" href="kesehatan-gigi.html">
-                                    <i class="fas fa-tooth"></i> Kesehatan Gigi
-                                </a></li>
-                            </ul>
-                        </li>
-                        
-                        <li class="nav-item dropdown position-static">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-stethoscope"></i> Layanan
-                            </a>
-                            <div class="dropdown-menu mega-menu">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <div class="mega-menu-category">
-                                                <h6 class="mega-menu-title">
-                                                    <i class="fas fa-user-md"></i>
-                                                    Kulit dan Kelamin
-                                                </h6>
-                                                <ul class="mega-menu-items">
-                                                    <li><strong>Dermatologi:</strong></li>
-                                                    <li><a href="layanan/eksim.html">Eksim</a></li>
-                                                    <li><a href="layanan/vitiligo.html">Vitiligo</a></li>
-                                                    <li><a href="layanan/dermatitis.html">Dermatitis</a></li>
-                                                    <li><strong>Veneraologi:</strong></li>
-                                                    <li><a href="layanan/sifilis.html">Sifilis</a></li>
-                                                    <li><a href="layanan/gonore.html">Gonore</a></li>
-                                                    <li><a href="layanan/herpes-kelamin.html">Herpes Kelamin</a></li>
-                                                    <li><a href="layanan/isk.html">Infeksi Saluran Kemih</a></li>
-                                                    <li><a href="layanan/trikomoniasis.html">Trikomoniasis</a></li>
-                                                    <li><a href="layanan/kutil-kelamin.html">Kutil Kelamin</a></li>
-                                                </ul>
-                                            </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="top: 40px; background: white !important; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 15px 0;">
+        <div class="container">
+            <a class="navbar-brand" href="beranda.html" style="font-weight: 700; font-size: 24px; color: var(--primary-color) !important; text-decoration: none;">
+                <i class="fas fa-clinic-medical me-2"></i>
+                KLINIK PANDAWA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="beranda.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solusiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solusi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="solusiDropdown">
+                            <li><a class="dropdown-item" href="spesialis-kulit-dan-kelamin.html">
+                                <i class="fas fa-stethoscope me-2"></i>Kulit dan Kelamin
+                            </a></li>
+                            <li><a class="dropdown-item" href="seksual-dan-reproduksi.html">
+                                <i class="fas fa-venus-mars me-2"></i>Seksual dan Reproduksi
+                            </a></li>
+                            <li><a class="dropdown-item" href="estetika-dan-anti-aging.html">
+                                <i class="fas fa-spa me-2"></i>Estetika dan Anti Aging
+                            </a></li>
+                            <li><a class="dropdown-item" href="kesehatan-gigi.html">
+                                <i class="fas fa-tooth me-2"></i>Kesehatan Gigi
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="layananDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu mega-menu w-100" aria-labelledby="layananDropdown" style="border: none; border-radius: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 30px 0; margin-top: 0;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title" style="color: var(--primary-color); font-weight: 600; font-size: 16px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e8f4fd;">
+                                            <i class="fas fa-stethoscope me-2"></i>
+                                            Kulit dan Kelamin
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle" style="color: #6c757d; font-weight: 600; font-size: 14px; margin-bottom: 10px; margin-top: 15px;">Dermatologi</h6>
+                                            <a class="dropdown-item" href="layanan/eksim.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Eksim</a>
+                                            <a class="dropdown-item" href="layanan/vitiligo.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Vitiligo</a>
+                                            <a class="dropdown-item" href="layanan/dermatitis.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Dermatitis</a>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle" style="color: #6c757d; font-weight: 600; font-size: 14px; margin-bottom: 10px; margin-top: 15px;">Veneraologi</h6>
+                                            <a class="dropdown-item" href="layanan/sifilis-diagnosis-pengobatan.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Sifilis</a>
+                                            <a class="dropdown-item" href="layanan/gonore.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Gonore</a>
+                                            <a class="dropdown-item" href="layanan/herpes-kelamin.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Herpes Kelamin</a>
+                                            <a class="dropdown-item" href="layanan/infeksi-saluran-kemih.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Infeksi Saluran Kemih</a>
+                                            <a class="dropdown-item" href="layanan/trikomoniasis.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Trikomoniasis</a>
+                                            <a class="dropdown-item" href="layanan/kutil-kelamin.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Kutil Kelamin</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title" style="color: var(--primary-color); font-weight: 600; font-size: 16px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e8f4fd;">
+                                            <i class="fas fa-venus-mars me-2"></i>
+                                            Seksual dan Reproduksi
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle" style="color: #6c757d; font-weight: 600; font-size: 14px; margin-bottom: 10px; margin-top: 15px;">Andrologi</h6>
+                                            <a class="dropdown-item" href="layanan/disfungsi-ereksi.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Disfungsi Ereksi</a>
+                                            <a class="dropdown-item" href="layanan/ejakulasi-dini.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Ejakulasi Dini</a>
+                                        </div>
+                                        <div class="mega-menu-section">
+                                            <h6 class="mega-menu-subtitle" style="color: #6c757d; font-weight: 600; font-size: 14px; margin-bottom: 10px; margin-top: 15px;">Ginekologi</h6>
+                                            <a class="dropdown-item" href="layanan/vaginoplasty.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Vaginoplasty</a>
+                                            <a class="dropdown-item" href="layanan/labiaplasty.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Labiaplasty</a>
+                                            <a class="dropdown-item" href="layanan/keputihan.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Keputihan</a>
+                                            <a class="dropdown-item" href="layanan/pap-smear.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Pap Smear</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title" style="color: var(--primary-color); font-weight: 600; font-size: 16px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e8f4fd;">
+                                            <i class="fas fa-spa me-2"></i>
+                                            Estetika dan Anti Aging
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="layanan/filler.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Filler</a>
+                                            <a class="dropdown-item" href="layanan/infus-whitening.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Infus Whitening</a>
+                                            <a class="dropdown-item" href="layanan/rhinoplasty.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Rhinoplasty</a>
+                                            <a class="dropdown-item" href="layanan/botox.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Botox</a>
+                                            <a class="dropdown-item" href="layanan/threadlift.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Threadlift</a>
+                                        </div>
+                                        <h6 class="mega-menu-title mt-3" style="color: var(--primary-color); font-weight: 600; font-size: 16px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e8f4fd;">
+                                            <i class="fas fa-tooth me-2"></i>
+                                            Kesehatan Gigi
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="layanan/veneer.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Veneer</a>
+                                            <a class="dropdown-item" href="layanan/bleaching.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Bleaching</a>
+                                            <a class="dropdown-item" href="layanan/klar-aligner.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Aligner</a>
+                                            <a class="dropdown-item" href="layanan/akar-gigi.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Akar Gigi</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h6 class="mega-menu-title" style="color: var(--primary-color); font-weight: 600; font-size: 16px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e8f4fd;">
+                                            <i class="fas fa-cut me-2"></i>
+                                            Bedah Minor
+                                        </h6>
+                                        <div class="mega-menu-section">
+                                            <a class="dropdown-item" href="layanan/sunat-laser.html" style="padding: 8px 15px; color: #2c3e50; font-size: 14px; border-radius: 5px; margin-bottom: 2px;">Sunat Laser</a>
                                         </div>
                                         
-                                        <div class="col-lg-3">
-                                            <div class="mega-menu-category">
-                                                <h6 class="mega-menu-title">
-                                                    <i class="fas fa-venus-mars"></i>
-                                                    Seksual dan Reproduksi
-                                                </h6>
-                                                <ul class="mega-menu-items">
-                                                    <li><strong>Andrologi:</strong></li>
-                                                    <li><a href="layanan/disfungsi-ereksi.html">Disfungsi Ereksi</a></li>
-                                                    <li><a href="layanan/ejakulasi-dini.html">Ejakulasi Dini</a></li>
-                                                    <li><strong>Ginekologi:</strong></li>
-                                                    <li><a href="layanan/vaginoplasty.html">Vaginoplasty</a></li>
-                                                    <li><a href="layanan/labiaplasty.html">Labiaplasty</a></li>
-                                                    <li><a href="layanan/keputihan.html">Keputihan</a></li>
-                                                    <li><a href="layanan/pap-smear.html">Pap Smear</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-3">
-                                            <div class="mega-menu-category">
-                                                <h6 class="mega-menu-title">
-                                                    <i class="fas fa-magic"></i>
-                                                    Estetika & Anti Aging
-                                                </h6>
-                                                <ul class="mega-menu-items">
-                                                    <li><a href="layanan/filler.html">Filler</a></li>
-                                                    <li><a href="layanan/infus-whitening.html">Infus Whitening</a></li>
-                                                    <li><a href="layanan/rhinoplasty.html">Rhinoplasty</a></li>
-                                                    <li><a href="layanan/botox.html">Botox</a></li>
-                                                    <li><a href="layanan/threadlift.html">Threadlift</a></li>
-                                                </ul>
-                                                
-                                                <h6 class="mega-menu-title mt-3">
-                                                    <i class="fas fa-tooth"></i>
-                                                    Kesehatan Gigi
-                                                </h6>
-                                                <ul class="mega-menu-items">
-                                                    <li><a href="layanan/veneer.html">Veneer</a></li>
-                                                    <li><a href="layanan/bleaching.html">Bleaching</a></li>
-                                                    <li><a href="layanan/aligner.html">Aligner</a></li>
-                                                    <li><a href="layanan/akar-gigi.html">Akar Gigi</a></li>
-                                                    <li><a href="layanan/tambal-gigi.html">Tambal Gigi</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-3">
-                                            <div class="mega-menu-category">
-                                                <h6 class="mega-menu-title">
-                                                    <i class="fas fa-cut"></i>
-                                                    Bedah Minor
-                                                </h6>
-                                                <ul class="mega-menu-items">
-                                                    <li><a href="layanan/sunat-laser.html">Sunat Laser</a></li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <div class="mega-menu-cta">
-                                                <h5>Konsultasi Gratis</h5>
-                                                <p>Dapatkan konsultasi dengan dokter spesialis kami</p>
-                                                <a href="https://wa.me/6281234567890?text=Halo%20Klinik%20Pandawa%2C%20saya%20ingin%20konsultasi%20gratis" class="btn-whatsapp" target="_blank">
-                                                    <i class="fab fa-whatsapp"></i>
-                                                    Chat Sekarang
-                                                </a>
+                                        <div class="mega-menu-cta mt-4">
+                                            <div class="card border-0" style="background: linear-gradient(135deg, #3DBDB4, #3DBDB4); border-radius: 10px; overflow: hidden;">
+                                                <div class="card-body text-white text-center">
+                                                    <h6 class="card-title mb-2">Konsultasi Gratis</h6>
+                                                    <p class="card-text small mb-3">Dapatkan konsultasi dengan dokter spesialis</p>
+                                                    <a href="https://wa.me/6281234567890?text=Halo%20dokter,%20saya%20ingin%20konsultasi%20gratis" class="btn btn-light btn-sm" target="_blank">
+                                                        <i class="fab fa-whatsapp me-1"></i>
+                                                        Chat Sekarang
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" href="tentang-klinik.html">
-                                <i class="fas fa-info-circle"></i> Tentang Klinik Pandawa
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="hubungi-kami.html">
-                                <i class="fas fa-phone-alt"></i> Hubungi Kami
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <div class="d-flex">
-                        <a href="https://wa.me/6281234567890?text=Halo%20Klinik%20Pandawa%2C%20saya%20ingin%20konsultasi" class="btn-cta" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            Konsultasi Gratis
-                        </a>
-                    </div>
-                </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang-klinik.html">Tentang Klinik Pandawa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hubungi-kami.html">Hubungi Kami</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
 
     <!-- Page Header -->
